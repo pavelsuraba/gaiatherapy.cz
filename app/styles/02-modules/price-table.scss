@@ -1,0 +1,29 @@
+/*==========================================================================
+  Price table
+  ========================================================================== */
+
+%price-element {
+  display: inline-block;
+  line-height: 1.8;
+}
+
+.price-table {
+  margin-bottom: 3rem;
+}
+
+.price-table__row:nth-child(odd) {
+  background: $price-bg-color;
+}
+
+.price-table__name {
+  @extend %price-element;
+  width: 80%;
+  padding-left: 5px;
+}
+
+.price-table__price {
+  @extend %price-element;
+  width: 20%;
+  text-align: right;
+  padding-right: 5px;
+}

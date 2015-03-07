@@ -1,0 +1,42 @@
+/*==========================================================================
+  Utility , helpers
+  ========================================================================== */
+
+.text--center {
+  text-align: center;
+}
+
+.text--right {
+  text-align: right;
+}
+
+.text--left {
+  text-align: left;
+}
+
+.vertical--center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.padding--top {
+  padding-top: 3rem; //48 , 54 , 60px vertical rhythm
+}
+
+.margin--bottom {
+  margin-bottom: 1.5rem;
+}
+
+.full-height {
+	height: 100%;
+}
+
+.float--right {
+  float: right;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}

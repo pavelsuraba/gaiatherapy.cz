@@ -1,0 +1,162 @@
+/*==========================================================================
+  Navigation
+  ========================================================================== */
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: -210px;
+  bottom: 0;
+  width: 200px;
+  background: $color-bg-navigation;
+  transition: all 200ms;
+  box-shadow: 3px 0px 10px 0px rgba(50, 50, 50, 0.85);
+  transform: translateZ(0);
+  z-index: 99;
+
+  @include bp(70em) { //1120px
+    left: 0;
+    width: 200px;
+  }  
+
+  @include bp(78em) { //1248px
+    width: 280px;
+  }  
+}
+
+.navigation.js-active {
+  left: 0;
+}
+
+.navigation__list {
+  list-style: none;
+  padding: 1rem 0 0 0;
+}
+
+.navigation__list__item {
+  width: 100%;
+  height: 100%;
+  padding: .8rem 0 .8rem 2rem;
+  cursor: pointer;
+
+  @include bp(78em) { //1248px
+    padding: .8rem 0 .8rem 3.3rem;
+  } 
+
+  &:hover {
+
+    background: $color-bg-navigation-hover;
+
+    .navigation__anchor {
+      color: $color-font-navigation-hover;
+    }  
+  }
+}
+
+.navigation__anchor {
+  font-family: "Julius", serif;
+  width: 100%;
+  height: 100%;
+  color: $color-font-navigation;
+  text-decoration: none;
+  font-size: 18px;
+
+  &:not(.navigation__anchor--logo) {
+    display: block;  
+  }
+
+  @include bp(78em) { //1248px
+    font-size: 20px;
+  }  
+}
+
+.navigation__logo {
+  display: block;
+  margin: 0 auto;
+  padding: 1rem 0 0 0; 
+}
+
+/* Menu button variables */
+$icon_height: 22px;
+$line_width: 40px;
+$line_height: 4px;
+
+.menu {
+    position: absolute;
+    top: 0.9rem;
+    right: 1.5rem;
+    z-index: 999;
+}
+
+.menu__btn {
+    position: relative;
+    display: block;
+    width: $line_width;
+    height: $icon_height;
+    z-index: 3;
+    text-decoration: none;
+    outline: 0;
+
+    @include bp(70em) { //1120px
+        display: none;
+    }
+}
+
+.menu__btn__text {
+    position: relative;
+    left: -4.5rem;
+    top: -0.2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $nav-btn-text;
+    line-height: 1.2;
+
+    @include bp(65em) { //1040px
+      line-height: 1;
+    }
+}
+
+.menu__btn__line {
+    display: block;
+    position: absolute;
+    width: $line_width;
+    height: $line_height;
+    background: $nav-btn-line;
+    border-radius: ($line_height / 2); 
+    transition: all 200ms linear;  
+}
+
+.menu__btn.js-active {
+
+    .menu__btn__line1 {
+        transform: translateY(11px) rotate(45deg);
+    }
+
+    .menu__btn__line2 {
+        opacity: 0;
+    }     
+
+    .menu__btn__line3 {
+        transform: translateY(-11px) rotate(-45deg);;
+    }    
+}
+
+.menu__btn__line1 {
+    top: 0;
+}
+
+.menu__btn__line2 {
+    top: 50%;
+}
+
+.menu__btn__line3 {
+    top: 100%;
+}
+
+.navigation--copyright {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+    font-family: "Julius", serif;    
+}

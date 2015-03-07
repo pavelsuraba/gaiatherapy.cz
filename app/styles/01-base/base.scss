@@ -1,0 +1,76 @@
+/*==========================================================================
+  Base
+  ========================================================================== */
+
+::selection {
+    background: $selection-color;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 100%;
+  line-height: 1.5;
+
+  @include bp(50em) { //800px
+    font-size: 112.5%;
+  }
+
+  @include bp(65em) { //1040px
+    font-size: 125%;
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color: $body-font;
+  background: $body-bg;
+  font-family: "Clear", serif;
+  text-rendering: optimizeLegibility;
+  position: relative;
+  overflow-x: hidden;
+}
+
+a {
+  color: $body-font;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  position: relative; 
+  transition: all 200ms;
+
+  @include bp(70em) { //1120px
+    padding-left: 200px;
+  }
+
+  @include bp(78em) { //1248px
+    padding-left: 280px;
+  }
+}
+
+.content.js-active {
+  transform: translateX(200px);
+}
+
+.no-transform .content.js-active {
+  left: 200px;
+}
+
+.frown {
+  font-size: 10rem;
+  text-align: center;
+}
+
+.frown--text {
+  font-family: "Clear", serif;
+  text-align: center;
+}
+

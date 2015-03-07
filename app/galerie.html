@@ -1,0 +1,109 @@
+<!doctype html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<title>Gaia therapy</title>
+		<meta name="description" content="Gaia therapy studio Cheb">
+		<meta name="keywords" content="Gaia,Zine,Cheb,Chebsko,Karlovarský kraj">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta property="og:title" content="Gaia therapy studio - galerie"/>
+		<meta property="og:url" content="http://gaiatherapy.cz"/>
+		<meta property="og:description" content="Gaia therapy studio je místem pro Váš odpočinek a relax. Pro Vaši regeneraci těla i duše."/>
+		<meta property="og:image" content="http://www.gaiatherapy.cz/images/logo300.png"/>
+
+		<link rel="icon" type="image/png" href="/favicon.png" sizes="32x32">
+		<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon.png">
+
+		<script>
+			function loadCSS( href, before, media ){
+				"use strict";
+				var ss = window.document.createElement( "link" );
+				var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
+				ss.rel = "stylesheet";
+				ss.href = href;
+				ss.media = "only x";
+				ref.parentNode.insertBefore( ss, ref );
+				setTimeout( function(){
+					ss.media = media || "all";
+				} );
+				return ss;
+			 }
+			loadCSS( "styles/font.css" );
+
+			document.createElement( "picture" );
+		</script>
+
+		<!-- build:css styles/main.css -->
+		<link rel="stylesheet" href="styles/main.css">
+		<!-- endbuild -->
+
+		<!-- build:js scripts/vendor/modernizr.js -->
+		<script src="bower_components/modernizr/modernizr.js"></script>
+		<!-- endbuild -->
+	</head>
+	<body>
+
+	<div class="content">
+		<div class="container">
+			<h1>Galerie</h1>
+			<div class="video-container">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/HGxj61hVkak" frameborder="0" allowfullscreen></iframe>
+			</div>   
+		</div>                 
+	</div><!-- /content -->
+
+	<div class="menu">
+		<a class="menu__btn" href="#"><span class="menu__btn__text">MENU</span>
+		<span class="menu__btn__line menu__btn__line1"></span>
+		<span class="menu__btn__line menu__btn__line2"></span>
+		<span class="menu__btn__line menu__btn__line3"></span>
+		</a>
+	</div><!-- /menu button -->
+
+	<nav class="navigation">
+		<!-- <a href="/index.html"><img src="images/logo/logoW-100.png" class="navigation__logo" alt=""></a> -->
+		<ul class="navigation__list">
+			<li class="navigation__list__item"><a href="/studio.html" class="navigation__anchor">Gaia studio</a></li>
+			<li class="navigation__list__item"><a href="/zine.html" class="navigation__anchor">Gaia zine</a></li>
+			<li class="navigation__list__item"><a href="/novinky.html" class="navigation__anchor">Novinky</a></li>
+			<li class="navigation__list__item"><a href="/cenik.html" class="navigation__anchor">Ceník</a></li>
+			<li class="navigation__list__item"><a href="/galerie.html" class="navigation__anchor">Galerie</a></li>
+			<li class="navigation__list__item"><a href="/kontakt.html" class="navigation__anchor">Kontakt</a></li>
+		</ul>
+
+		<small class="navigation--copyright">Gaia &#169; 2015</small>   
+
+	</nav><!-- /navigation -->
+
+	<script>
+		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+		function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+		e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+		e.src='//www.google-analytics.com/analytics.js';
+		r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+		ga('create','UA-XXXXX-X');ga('send','pageview');
+	</script>
+
+	<!-- Old browser warning -->
+	<script> 
+		var $buoop = {vs:{i:9,f:15,o:12.1,s:5.1}}; 
+		$buoop.ol = window.onload; 
+		window.onload=function(){ 
+		try {if ($buoop.ol) $buoop.ol();}catch (e) {} 
+		var e = document.createElement("script"); 
+		e.setAttribute("type", "text/javascript");
+		e.setAttribute("async", "true"); 
+		e.setAttribute("src", "//browser-update.org/update.js"); 
+		document.body.appendChild(e);} 
+	</script>
+
+	<!-- build:js scripts/vendor.js -->
+	<!-- bower:js -->
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<!-- endbower -->
+	<!-- endbuild -->
+	<!-- build:js scripts/main.js -->
+	<script src="scripts/main.js"></script>
+	<!-- endbuild -->
+</body>
+</html>

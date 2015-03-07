@@ -1,0 +1,80 @@
+/* ==========================================================================
+   Form
+   ========================================================================== */
+
+form {
+    max-width: 100%;
+}
+
+input {
+    font-family: 'Fira', sans-serif;
+    border: none;
+    outline: none;
+    text-indent: 10px;
+    width: 100%;
+    height: 3rem;
+    background: $form-bg-color;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+}
+
+input:focus {
+    border: 2px solid $form-border-color;
+}
+
+textarea {
+    font-family: 'Fira', sans-serif;
+    resize: none;
+    border: none;
+    outline: none;
+    line-height: 2;
+    text-indent: 10px;
+    width: 100%;
+    height: 9rem;
+    background: $form-bg-color;
+    vertical-align: top;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    margin-bottom: 3rem;
+    border-radius: 5px;
+}
+
+textarea:focus {
+    border: 2px solid $form-border-color;
+}
+
+input[type=submit] {
+    width: 50%;
+    max-width: 20rem;
+    font-size: 1rem;
+    background: $form-submit-color;
+    color: $form-submit-font-color;
+    cursor: pointer;
+
+    &:hover {
+        background: $form-submit-color-hover;
+    }
+}
+
+::-webkit-input-placeholder {
+   color: $form-placeholder-font-color;
+   font-size: 0.8rem;
+}
+
+:-moz-placeholder {
+   color: $form-placeholder-font-color; 
+}
+
+::-moz-placeholder {
+   color: $form-placeholder-font-color;
+}
+
+:-ms-input-placeholder {  
+   color: $form-placeholder-font-color;
+}

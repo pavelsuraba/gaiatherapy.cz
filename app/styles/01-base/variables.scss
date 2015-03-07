@@ -1,0 +1,48 @@
+/*==========================================================================
+  Variables
+  ========================================================================== */
+
+$white: #ededed;
+$grey: #3a3a3a;
+$grey-light: #555;
+
+/* Selection variable */
+$selection-color: #FF92BB;
+
+/* Body variables */
+$body-bg: $white;
+$body-font: $grey-light;
+
+
+/* Navigation variables */
+$color-bg-navigation: $grey;
+$color-bg-navigation-hover: darken($grey, 5%);
+$color-font-navigation: #b3b3b3;
+$color-font-navigation-hover: darken($white, 5%);
+
+
+/* Navigation button font color */
+$nav-btn-text: $grey-light;
+$nav-btn-line: $grey-light;
+
+
+/* Form background color */
+$form-bg-color: darken($white, 5%);
+
+
+/* Form submit color */
+$form-submit-color: $grey;
+$form-submit-color-hover: darken($grey, 5%);
+$form-submit-font-color: $white;
+
+
+/* Form focus border color */
+$form-border-color: $grey;
+
+
+/* Form placeholder font color */
+$form-placeholder-font-color: $grey-light;
+
+/* Price table background color */
+$price-bg-color: darken($white, 5%);
+

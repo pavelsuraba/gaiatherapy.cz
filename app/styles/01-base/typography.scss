@@ -1,0 +1,117 @@
+/*==========================================================================
+  Typography
+  ========================================================================== */
+  
+/*
+---Font sizes---
+
+
+Modular Scale: golden ratio => 1:1.618 
+
+
+  html: 100%      1em     = 16px
+          line-height     = 1.5
+          vertical rhythm = 24px
+
+          h1      2.625em = 42px
+          line-height     = 1.143
+          vertical rhythm = 48px
+
+          h2      1.618em = 26px
+          line-height     = 1.847
+          vertical rhythm = 48px
+
+
+  html: 112.5%    1em     = 18px
+          line-height     = 1.5
+          vertical rhythm = 27px
+
+          h1      2.611em = 47px
+          line-height     = 1.15
+          vertical rhythm = 54px
+
+          h2      1.611em = 29px
+          line-height     = 1.863
+          vertical rhythm = 54px 
+
+
+  html: 125%      1em     = 20px
+          line-height     = 1.5
+          vertical rhythm = 30px
+
+          h1        2.6em = 52px
+          line-height     = 1.154
+          vertical rhythm = 60px
+
+          h2        1.6em = 32px
+          line-height     = 1.875
+          vertical rhythm = 60px
+                      
+*/
+
+h1, h2, {
+  font-family: "Julius", serif;
+}
+
+h1 {
+  font-size: 2.625rem;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+
+  @include bp(50em) { //800px
+    font-size: 2.611rem;
+    line-height: 1.15;
+  }
+
+  @include bp(65em) { //1040px
+    font-size: 2.6rem;
+    line-height: 1.154;
+  }
+}
+
+h2 {
+  font-size: 1.625rem;
+  line-height: 1.85;
+  // margin-bottom: 1.5rem;
+
+  @include bp(50em) { //800px
+    font-size: 1.611rem;
+    line-height: 1.863;
+  }
+
+  @include bp(65em) { //1040px
+    font-size: 1.6rem;
+    line-height: 1.875;
+  }
+}
+
+p, ul {
+  margin-bottom: 1.5rem; //48 , 54 , 60px vertical rhythm
+}
+
+ol li {
+  margin-bottom: 1.5rem; //48 , 54 , 60px vertical rhythm
+}
+
+/* Put this class on body element to see vertical rhythm */
+.vertical-rhythm {
+    background-image: linear-gradient(#e2e2e2 1px, transparent 1px);
+    background-size: 100% 1.500em;
+    &:before {
+      content: "vertical rhythm 24px";
+
+      @include bp(50em) { //800px
+        content: "vertical rhythm 27px";
+      }
+
+      @include bp(65em) { //1040px
+        position: relative;
+        left: 230px;
+        content: "vertical rhythm 30px";
+      }
+    }
+}
+
+.blockquote {
+  text-indent: -0.4rem;
+}

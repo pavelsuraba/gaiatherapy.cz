@@ -1,0 +1,37 @@
+/*==========================================================================
+  Gaia.cz
+  ========================================================================== */
+
+/**
+  Author: Pavel Šuraba
+ 
+  Year: 2014
+  
+  Description: Responsive , mobile first , OOCSS
+ 
+  Fonts: San Francisco
+   
+  Tools: Sass , Gulp , Bower , Picturefill
+
+  Support: IE9+
+   
+ */
+
+/* Variables */
+/* Utility & helpers */
+/* Basic elements styling html,body etc. */
+@import "01-base/variables";
+@import "01-base/mixins";
+@import "01-base/utility";
+@import "01-base/base";
+@import "01-base/typography";
+@import "01-base/grid";
+
+/* UI modules */
+@import "02-modules/navigation";
+@import "02-modules/form";
+@import "02-modules/price-table";
+@import "02-modules/video";
+
+/* Layout specific styling */
+@import "03-layout/main-page";

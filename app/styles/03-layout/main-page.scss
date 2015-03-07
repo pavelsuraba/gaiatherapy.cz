@@ -1,0 +1,104 @@
+/*==========================================================================
+  Main-page
+  ========================================================================== */
+
+.full-bg {
+  width: 100%;
+  height: 100%;
+  background: url(../images/bg720.jpg) no-repeat center center fixed; 
+  background-size: cover;
+
+  @include retina() {
+    background: url(../images/bg1280.jpg) no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  @include bp(60em) { //960px
+    background: url(../images/bg1280.jpg) no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  @include retina-min(60em) {
+    background: url(../images/bg1920.jpg) no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  @include bp(94em) { //1500px
+    background: url(../images/bg1920.jpg) no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  @include retina-min(94em) {
+    background: url(../images/bg3200.jpg) no-repeat center center fixed;
+    background-size: cover;
+  }
+}
+
+.logo--center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+}
+
+.logo__image {
+  /* center horizontal axis + on vertical axis about 75 px lower to match the head */
+  margin: 75px 0 0 -100px;
+
+  @include bp(50em) { //800px
+    margin: 75px 0 0 -160px;
+  }
+}
+
+@keyframes anim-img {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.anim-slide {
+  animation: anim-img 10s 500ms ease-out backwards;       
+}
+
+#icon {
+  position: absolute;
+  display: none;
+  top: 20px;
+  right: 40px;
+  background-size: 44px 80px;
+  width: 44px;
+  height: 40px;
+  cursor: pointer;
+
+  @include bp(78em) { //1248px
+    display: inline-block;
+  }
+}
+
+.no-svg #icon {
+  width: 48px;
+  height: 48px;
+  background-size: 48px 48px;
+}
+
+.playing {
+  background: url('../images/svg/sprite.svg') no-repeat; 
+  background-position: 0px 0px;
+}
+
+.no-svg .playing {
+  background: url('../images/svg/speaker.png') no-repeat;
+}
+
+.stop {
+  background: url('../images/svg/sprite.svg') no-repeat;
+  background-position: 0px -40px;  
+}
+
+.no-svg .stop {
+  background: url('../images/svg/speaker.png') no-repeat;
+}
