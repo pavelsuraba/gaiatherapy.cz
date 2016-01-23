@@ -2,9 +2,9 @@
   Variables
   ========================================================================== */
 
-$white: #ededed;
+$white: #fff;
 $grey: #3a3a3a;
-$grey-light: #555;
+$grey-light: #333;
 
 /* Selection variable */
 $selection-color: #FF92BB;
@@ -15,9 +15,9 @@ $body-font: $grey-light;
 
 
 /* Navigation variables */
-$color-bg-navigation: $grey;
+$color-bg-navigation: $grey-light;
 $color-bg-navigation-hover: darken($grey, 5%);
-$color-font-navigation: #b3b3b3;
+$color-font-navigation: #f8f8f8;
 $color-font-navigation-hover: darken($white, 5%);
 
 

@@ -4,17 +4,17 @@
 
 /**
   Author: Pavel Šuraba
- 
+
   Year: 2014
-  
+
   Description: Responsive , mobile first , OOCSS
- 
+
   Fonts: San Francisco
-   
+
   Tools: Sass , Gulp , Bower , Picturefill
 
   Support: IE9+
-   
+
  */
 
 /* Variables */
@@ -32,6 +32,9 @@
 @import "02-modules/form";
 @import "02-modules/price-table";
 @import "02-modules/video";
+@import "02-modules/review";
+@import "02-modules/contact";
+@import "02-modules/gallery";
 
 /* Layout specific styling */
 @import "03-layout/main-page";

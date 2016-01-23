@@ -2,15 +2,19 @@
   Grid
   ========================================================================== */
 
-$grid-pad: 1rem;
+$grid-pad: 20px;
 
 .container {
-  max-width: 40em; //640px
+  max-width: 700px;
   margin: 0 auto;
-  padding: 6rem $grid-pad 0 $grid-pad;
+  padding: 80px $grid-pad 0 $grid-pad;
+
+  &.gallery {
+    max-width: 800px;
+  }
 
   @include bp(50em) { //800px
-    padding: 3rem $grid-pad 0 $grid-pad;
+    padding: 60px $grid-pad 0 $grid-pad;
   }
 }
 
@@ -34,5 +38,5 @@ $grid-pad: 1rem;
 @media screen and (min-width: 35em) {
   .col {
     width: 50%;
-  }  
+  }
 }

@@ -1,117 +1,77 @@
 /*==========================================================================
   Typography
   ========================================================================== */
-  
-/*
----Font sizes---
-
-
-Modular Scale: golden ratio => 1:1.618 
-
-
-  html: 100%      1em     = 16px
-          line-height     = 1.5
-          vertical rhythm = 24px
-
-          h1      2.625em = 42px
-          line-height     = 1.143
-          vertical rhythm = 48px
-
-          h2      1.618em = 26px
-          line-height     = 1.847
-          vertical rhythm = 48px
-
-
-  html: 112.5%    1em     = 18px
-          line-height     = 1.5
-          vertical rhythm = 27px
-
-          h1      2.611em = 47px
-          line-height     = 1.15
-          vertical rhythm = 54px
-
-          h2      1.611em = 29px
-          line-height     = 1.863
-          vertical rhythm = 54px 
-
-
-  html: 125%      1em     = 20px
-          line-height     = 1.5
-          vertical rhythm = 30px
-
-          h1        2.6em = 52px
-          line-height     = 1.154
-          vertical rhythm = 60px
-
-          h2        1.6em = 32px
-          line-height     = 1.875
-          vertical rhythm = 60px
-                      
-*/
 
 h1, h2, {
-  font-family: "Julius", serif;
+  font-family: "Clear", serif;
+  font-weight: 600;
+  line-height: 1.1
 }
 
 h1 {
-  font-size: 2.625rem;
-  line-height: 1.15;
-  margin-bottom: 1.5rem;
-
+  font-size: 32px;
+  margin-bottom: 5px;
   @include bp(50em) { //800px
-    font-size: 2.611rem;
-    line-height: 1.15;
-  }
-
-  @include bp(65em) { //1040px
-    font-size: 2.6rem;
-    line-height: 1.154;
+    font-size: 56px;
   }
 }
 
 h2 {
-  font-size: 1.625rem;
-  line-height: 1.85;
-  // margin-bottom: 1.5rem;
-
+  font-size: 20px;
+  margin-bottom: 10px;
   @include bp(50em) { //800px
-    font-size: 1.611rem;
-    line-height: 1.863;
+    font-size: 30px;
   }
+}
 
-  @include bp(65em) { //1040px
-    font-size: 1.6rem;
-    line-height: 1.875;
+.subheding {
+  font-family: "Clear", serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.1;
+  color: #777;
+  margin-bottom: 30px;
+  @include bp(50em) { //800px
+    font-size: 26px;
+    margin-bottom: 35px;
   }
 }
 
 p, ul {
-  margin-bottom: 1.5rem; //48 , 54 , 60px vertical rhythm
+  margin-bottom: 35px;
 }
 
 ol li {
-  margin-bottom: 1.5rem; //48 , 54 , 60px vertical rhythm
+  margin-bottom: 15px;
 }
 
-/* Put this class on body element to see vertical rhythm */
-.vertical-rhythm {
-    background-image: linear-gradient(#e2e2e2 1px, transparent 1px);
-    background-size: 100% 1.500em;
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  position: relative;
+  padding-left: 20px;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: 0;
+    width: 10px;
+    height: 1px;
+    background: $body-font;
+  }
+  @include bp(50em) { //800px
+    padding-left: 25px;
     &:before {
-      content: "vertical rhythm 24px";
-
-      @include bp(50em) { //800px
-        content: "vertical rhythm 27px";
-      }
-
-      @include bp(65em) { //1040px
-        position: relative;
-        left: 230px;
-        content: "vertical rhythm 30px";
-      }
+      top: 15px;
     }
+  }
 }
 
 .blockquote {
-  text-indent: -0.4rem;
+  font-family: "Clear", serif;
+  text-indent: -8px;
+  font-style: italic;
 }

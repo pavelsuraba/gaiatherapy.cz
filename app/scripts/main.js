@@ -83,6 +83,7 @@ var App = (function($) {
               }
           });
 
+
           setTimeout(function() {
             myContent.css('transition', 'all 200ms');
           }, 300);
@@ -90,14 +91,25 @@ var App = (function($) {
           if(pageUrl!=window.location){
               window.history.pushState({path:pageUrl},'',pageUrl);
           }
+          windowLocation();
       });
+  }
+
+  function windowLocation() {
+    var location = window.location;
+    console.log(location.pathname);
+    if(location.pathname === '/' || location.pathname === '/index.html') {
+      $('body').addClass('body--home');
+    } else {
+      $('body').removeClass('body--home');
+    }
   }
 
   function appendSong() {
 
     var container    = $('#song-container'),
         songContent  = '<audio id="theme" src="sounds/theme.ogg" type="audio/ogg" autoplay loop="loop"></audio>';
-        
+
     if(isWidthMore(1040)) {
       container.prepend(songContent);
     }
@@ -120,7 +132,7 @@ var App = (function($) {
           theme.pause();
         }
       });
-    }  
+    }
   }
 
 
@@ -129,7 +141,8 @@ var App = (function($) {
       addLogo: addLogo,
       myAjax: myAjax,
       appendSong: appendSong,
-      iconSong: iconSong
+      iconSong: iconSong,
+      windowLocation: windowLocation
   };
 
 })(jQuery);
@@ -139,3 +152,4 @@ App.addLogo();
 App.myAjax();
 App.appendSong();
 App.iconSong();
+App.windowLocation();

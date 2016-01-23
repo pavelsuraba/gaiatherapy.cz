@@ -5,31 +5,31 @@
 .full-bg {
   width: 100%;
   height: 100%;
-  background: url(../images/bg720.jpg) no-repeat center center fixed; 
+  background: url(../images/bg-480.jpg) no-repeat center center fixed;
   background-size: cover;
 
   @include retina() {
-    background: url(../images/bg1280.jpg) no-repeat center center fixed;
+    background: url(../images/bg-768.jpg) no-repeat center center fixed;
     background-size: cover;
   }
 
-  @include bp(60em) { //960px
-    background: url(../images/bg1280.jpg) no-repeat center center fixed;
+  @include bp(31em) { //500px
+    background: url(../images/bg-768.jpg) no-repeat center center fixed;
     background-size: cover;
   }
 
-  @include retina-min(60em) {
-    background: url(../images/bg1920.jpg) no-repeat center center fixed;
+  @include retina-min(31em) {
+    background: url(../images/bg-1450.jpg) no-repeat center center fixed;
     background-size: cover;
   }
 
-  @include bp(94em) { //1500px
-    background: url(../images/bg1920.jpg) no-repeat center center fixed;
+  @include bp(47em) { //750px
+    background: url(../images/bg-1450.jpg) no-repeat center center fixed;
     background-size: cover;
   }
 
-  @include retina-min(94em) {
-    background: url(../images/bg3200.jpg) no-repeat center center fixed;
+  @include retina-min(47em) {
+    background: url(../images/bg-1450.jpg) no-repeat center center fixed;
     background-size: cover;
   }
 }
@@ -42,11 +42,13 @@
 }
 
 .logo__image {
-  /* center horizontal axis + on vertical axis about 75 px lower to match the head */
-  margin: 75px 0 0 -100px;
+  margin: 0 0 0 -100px;
 
   @include bp(50em) { //800px
-    margin: 75px 0 0 -160px;
+    margin: 0 0 0 -100px;
+  }
+  @include bp(70em) { //1120px
+    margin: 0 0 0 -50px;
   }
 }
 
@@ -61,7 +63,7 @@
 }
 
 .anim-slide {
-  animation: anim-img 10s 500ms ease-out backwards;       
+  animation: anim-img 5s 500ms ease-in backwards;
 }
 
 #icon {
@@ -69,11 +71,15 @@
   display: none;
   top: 20px;
   right: 40px;
-  background-size: 44px 80px;
-  width: 44px;
-  height: 40px;
   cursor: pointer;
-
+  fill: $grey;
+  &.stop {
+    top: 20px;
+    right: 39px;
+  }
+  .body--home & {
+    fill: $white;
+  }
   @include bp(78em) { //1248px
     display: inline-block;
   }
@@ -86,19 +92,20 @@
 }
 
 .playing {
-  background: url('../images/svg/sprite.svg') no-repeat; 
-  background-position: 0px 0px;
+  .speaker--off {
+    display: none;
+  }
+  .speaker--on {
+    display: block;
+  }
 }
 
-.no-svg .playing {
-  background: url('../images/svg/speaker.png') no-repeat;
+.playing.stop {
+  .speaker--on {
+    display: none;
+  }
+  .speaker--off {
+    display: block;
+  }
 }
 
-.stop {
-  background: url('../images/svg/sprite.svg') no-repeat;
-  background-position: 0px -40px;  
-}
-
-.no-svg .stop {
-  background: url('../images/svg/speaker.png') no-repeat;
-}

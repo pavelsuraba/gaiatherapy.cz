@@ -1,0 +1,42 @@
+/* ==========================================================================
+   Gallery
+   ========================================================================== */
+
+.gallery {
+    clear: both;
+    overflow: hidden;
+
+}
+
+.gallery__item {
+    padding: 0 10px 0 10px;
+    margin-bottom: 20px;
+    a {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    &:before {
+        display: none;
+    }
+    @include bp(33em) {
+        float: left;
+        width: 50%;
+        height: 170px;
+        overflow: hidden;
+    }
+    @include bp(50em) {
+        width: 33.3%;
+        height: 160px;
+    }
+}
+
+.gallery__item__img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    transition: all 150ms ease;
+    &:hover {
+        filter: none;
+    }
+}

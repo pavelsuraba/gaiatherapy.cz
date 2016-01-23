@@ -1,9 +1,33 @@
 @font-face {
   font-family: "Clear";
-  src: url("../fonts/clear/ClearSans-Light.ttf") format('truetype');
+  src: url('../fonts/clear/clearsans-bold-webfont.woff2') format('woff2'),
+       url('../fonts/clear/clearsans-bold-webfont.woff') format('woff'),
+       url('../fonts/clear/clearsans-bold-webfont.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
 }
 
 @font-face {
-  font-family: "Julius";
-  src: url("../fonts/julius/JuliusSansOne-Regular.ttf") format('truetype');
+  font-family: "Clear";
+  src: url('../fonts/clear/clearsans-light-webfont.woff2') format('woff2'),
+       url('../fonts/clear/clearsans-light-webfont.woff') format('woff'),
+       url('../fonts/clear/clearsans-light-webfont.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
 }
+
+@font-face {
+  font-family: "Source-serif";
+  src: url('../fonts/source-serif/sourceserifpro-regular-webfont.woff2') format('woff2'),
+       url('../fonts/source-serif/sourceserifpro-regular-webfont.woff') format('woff'),
+       url('../fonts/source-serif/sourceserifpro-regular-webfont.ttf') format('truetype');
+  font-style: normal;
+}
+
+/*@font-face {
+  font-family: "Julius";
+  src: url('../fonts/julius/JuliusSansOne-Regular.woff2') format('woff2'),
+       url('../fonts/julius/JuliusSansOne-Regular.woff') format('woff'),
+       url('../fonts/julius/JuliusSansOne-Regular.ttf') format('truetype');
+  font-style: normal;
+}*/
