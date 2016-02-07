@@ -7,6 +7,11 @@
 }
 
 .review__heading {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    line-height: 1.1;
+
+  @include bp(50em) {
     font-size: 26px;
+  }
 }

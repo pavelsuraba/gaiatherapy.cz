@@ -97,7 +97,6 @@ var App = (function($) {
 
   function windowLocation() {
     var location = window.location;
-    console.log(location.pathname);
     if(location.pathname === '/' || location.pathname === '/index.html') {
       $('body').addClass('body--home');
     } else {
@@ -119,7 +118,7 @@ var App = (function($) {
     var theme = document.getElementById("theme"),
         icon  = $('#icon');
 
-        (theme ? theme.volume=0.5 : false)
+        (theme ? theme.volume = 0.5 : false)
 
     if(icon) {
       $(icon).on('click', function() {

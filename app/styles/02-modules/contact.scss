@@ -4,7 +4,11 @@
 
 .contact__heading {
     font-weight: 400;
-    color: #777
+    color: #777;
+    margin-bottom: 5px;
+    span {
+        font-size: 20px;
+    }
 }
 
 .contact__item {

@@ -4,7 +4,7 @@
 
 %price-element {
   display: inline-block;
-  line-height: 1.8;
+  line-height: 1.2;
 }
 
 .price-table {
@@ -18,13 +18,13 @@
 .price-table__name {
   @extend %price-element;
   width: 80%;
-  padding-left: 5px;
+  padding: 5px;
 }
 
 .price-table__price {
   @extend %price-element;
   font-family: "Clear", serif;
-  font-size: 18px;
+  font-size: 17px;
   width: 20%;
   text-align: right;
   padding-right: 5px;

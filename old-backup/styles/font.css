@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Clear";
+  src: url("../fonts/clear/ClearSans-Light.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Julius";
+  src: url("../fonts/julius/JuliusSansOne-Regular.ttf") format('truetype');
+}

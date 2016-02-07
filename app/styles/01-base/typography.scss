@@ -5,7 +5,8 @@
 h1, h2, {
   font-family: "Clear", serif;
   font-weight: 600;
-  line-height: 1.1
+  line-height: 1.1;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -20,7 +21,7 @@ h2 {
   font-size: 20px;
   margin-bottom: 10px;
   @include bp(50em) { //800px
-    font-size: 30px;
+    font-size: 28px;
   }
 }
 

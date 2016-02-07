@@ -5,7 +5,7 @@
 .gallery {
     clear: both;
     overflow: hidden;
-
+    margin-bottom: 50px;
 }
 
 .gallery__item {
@@ -35,7 +35,6 @@
     width: 100%;
     height: auto;
     filter: grayscale(100%);
-    transition: all 150ms ease;
     &:hover {
         filter: none;
     }
